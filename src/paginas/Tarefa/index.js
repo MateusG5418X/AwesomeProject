@@ -71,17 +71,13 @@ export default function Tarefa({ navigation }){
                 }}
             />
             
-            <TouchableOpacity style  
-                style={styles.botaoNovaTarefa}
-                onPress={() => navigation.navigate("Nova Anotação")}
-            >
+           
             
             <Botao
                 antIconName="plus"
                 style={{ backgroundColor:"#00AEEF", position:"absolute", right:15, bottom:50, zIndex:1 }}
-                            
+                onPress={() => navigation.navigate("Nova Anotação")}           
             />
-            </TouchableOpacity>
         </View>
     )
 }
