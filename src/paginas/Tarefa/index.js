@@ -3,11 +3,12 @@ import {
     View, 
     Text,
     TouchableOpacity,
-    FlatList
+    FlatList,
+    Alert
     } from "react-native"
 
 import database from "../../config/firebaseconfig";
-import {FontAwesome} from "@expo/vector-icons"
+import Botao from "./Botao";
 import styles from "./style"
 
 
@@ -44,14 +45,12 @@ export default function Tarefa({ navigation }){
                                 apagarTarefa(item.id)
                             }}
                         >
-                       <FontAwesome
-                            name="trash"
-                            size={25}
-                            color="#00AEEF"
-                        >
+                       <Botao
+                            antIconName="delete"
+                            style={{ backgroundColor: "#ff0000", marginBottom: 5 }}
+                            
+                        />
 
-                        </FontAwesome>
-                        
                         </TouchableOpacity>
 
                         <Text
@@ -59,11 +58,12 @@ export default function Tarefa({ navigation }){
                             onPress={()=>
                                 navigation.navigate("Detalhes",{
                                     id: item.id,
+                                    titulo: item.titulo,
                                     descricao: item.descricao,
                                 })
                             }
                         >
-                        {item.descricao}  
+                        {item.titulo}  
                         </Text> 
 
                     </View>
@@ -73,10 +73,14 @@ export default function Tarefa({ navigation }){
             
             <TouchableOpacity style  
                 style={styles.botaoNovaTarefa}
-                onPress={() => navigation.navigate("Nova Tarefa")}
+                onPress={() => navigation.navigate("Nova Anotação")}
             >
             
-                <Text style={styles.iconButton}>+</Text>
+            <Botao
+                antIconName="plus"
+                style={{ backgroundColor:"#00AEEF", position:"absolute", right:15, bottom:50, zIndex:1 }}
+                            
+            />
             </TouchableOpacity>
         </View>
     )

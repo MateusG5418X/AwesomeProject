@@ -13,14 +13,14 @@ export default function App() {
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Tarefa">
       <Stack.Screen
-      name="Tarefa"
+      name="Anotações"
       component={Tarefa}
       options = {{
         headerTintColor:"#00AEEF"
       }}
       />
       <Stack.Screen
-      name="Nova Tarefa"
+      name="Nova Anotação"
       component={NovaTarefa}
       options = {{
         headerTintColor:"#00AEEF"
