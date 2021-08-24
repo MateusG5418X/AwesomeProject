@@ -1,43 +1,43 @@
-import { StyleSheet } from 'react-native'
- 
+import { StyleSheet } from "react-native";
+
 const styles = StyleSheet.create({
- container: { 
-   flex:1,
-   backgroundColor:'#fff'
- },
- label:{
-    width:"90%",
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+  },
+  label: {
+    width: "90%",
     marginTop: 20,
-    fontSize:16,
+    fontSize: 16,
     marginLeft: 20,
-    color:"#00AEEF"
-},
-input:{
-    width:"90%",
-    marginTop:10,
-    padding:10,
-    height:50,
+    color: "#00AEEF",
+  },
+  input: {
+    width: "90%",
+    marginTop: 10,
+    padding: 10,
+    height: 50,
     borderBottomWidth: 1,
-    borderBottomColor:"#00AEEF",
-    marginLeft:"auto",
-    marginRight:"auto"
-},
-botaoNovaTarefa:{
-    width:60,
-    height:60,
-    position:"absolute",
+    borderBottomColor: "#00AEEF",
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  botaoNovaTarefa: {
+    width: 60,
+    height: 60,
+    position: "absolute",
     bottom: 30,
-    right:20,
-    backgroundColor:"#00AEEF",
-    borderRadius:50,
-    justifyContent:"center",
-    alignItems: "center"
-},
-iconButton:{
-    color:"#ffffff",
-    fontSize:16,
-    fontWeight:"bold",
-}
+    right: 20,
+    backgroundColor: "#00AEEF",
+    borderRadius: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  iconButton: {
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 });
 
- export default styles
+export default styles;
