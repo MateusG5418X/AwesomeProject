@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     backgroundColor: "#fff",
   },
-  Tarefas: {
+  EmAndamento: {
     width: "100%",
     flexDirection: "row-reverse",
     justifyContent: "space-between",

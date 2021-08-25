@@ -8,9 +8,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/francois-one": "^0.2.0",
+    "@expo-google-fonts/libre-franklin": "^0.2.0",
+    "@expo-google-fonts/roboto": "^0.2.0",
     "@react-navigation/native": "^6.0.1",
     "@react-navigation/stack": "^6.0.1",
     "expo": "~42.0.1",
+    "expo-app-loading": "^1.1.2",
+    "expo-font": "^9.2.1",
     "expo-status-bar": "~1.0.4",
     "firebase": "^8.8.1",
     "react": "16.13.1",

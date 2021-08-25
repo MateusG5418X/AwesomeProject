@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import { theme } from '../../Global/styles/theme';
  
 const styles = StyleSheet.create({
  container: { 
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize:16,
     marginLeft: 20,
-    color:"#00AEEF"
+    color: theme.colors.principal
 },
 input:{
     width:"90%",
@@ -18,7 +19,7 @@ input:{
     padding:10,
     height:50,
     borderBottomWidth: 1,
-    borderBottomColor:"#00AEEF",
+    borderBottomColor: theme.colors.principal,
     marginLeft:"auto",
     marginRight:"auto"
 },
@@ -28,13 +29,13 @@ botaoNovaTarefa:{
     position:"absolute",
     bottom: 30,
     right:20,
-    backgroundColor:"#00AEEF",
+    backgroundColor: theme.colors.principal,
     borderRadius:50,
     justifyContent:"center",
     alignItems: "center"
 },
 iconButton:{
-    color:"#ffffff",
+    color: theme.colors.branco,
     fontSize:16,
     fontWeight:"bold",
 }

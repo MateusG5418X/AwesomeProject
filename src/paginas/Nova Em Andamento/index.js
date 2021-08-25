@@ -5,17 +5,17 @@ import database from "../../config/firebaseconfig.js";
 import styles from "./style";
 import Botao from "../Tarefa/Botao.js";
 
-export default function NovaTarefa({ navigation }, props) {
+export default function NovaEmAndamento({ navigation }, props) {
   const [descricao, setDescricao] = useState(null);
   const [titulo, setTitulo] = useState(null);
 
   function addTarefa() {
-      database.collection("Tarefas").add({
+      database.collection("Em Andamento").add({
         descricao: descricao,
         titulo: titulo,
         status: false,
       });
-      navigation.navigate("Anotações");
+      navigation.navigate("Anotações em Andamento");
   }
   return (
     <View style={styles.container}>

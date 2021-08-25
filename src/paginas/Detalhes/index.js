@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-
 import database from "../../config/firebaseconfig.js";
 import styles from "./style";
 import Botao from "../Tarefa/Botao.js";
@@ -13,12 +12,12 @@ export default function Detalhes({ navigation, route }) {
   const idTarefa = route.params.id;
 
   function editarTarefa(titulo, descricao, id) {
-    database.collection("Tarefas").doc(id).update({
-      titulo: titulo,
-      descricao: descricao,
-    });
-    navigation.navigate("Anotações");
-  }
+      database.collection("Tarefas").doc(id).update({
+        titulo: titulo,
+        descricao: descricao,
+      });
+      navigation.navigate("Anotações");
+    }
 
   return (
     <View style={styles.container}>
