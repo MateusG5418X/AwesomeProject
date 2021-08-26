@@ -5,7 +5,7 @@ import styles from "./style";
 
 import { theme } from "../../Global/styles/theme";
 
-export default function TelaInicial({ navigation }) {
+export default function TelaSecundaria({ navigation }) {
   return (
     <View style={styles.container}>
         <Image source={ iconeLivro } />
@@ -13,15 +13,21 @@ export default function TelaInicial({ navigation }) {
        <View style={styles.botoes}>
         <View>
           <Button
-            title="Visualize Suas Anotações"
-            onPress={() => navigation.navigate("Tela Secundaria")}
+            title="Tarefas a Fazer"
+            onPress={() => navigation.navigate("Anotações")}
           />
           </View>
           <View style={styles.botao}>
           <Button
-            title="Adicionar Nova Anotação"
-            onPress={() => navigation.navigate("Nova Anotação")}
+            title="Tarefas em Andamento"
+            onPress={() => navigation.navigate("Anotações em Andamento")}
           />
+          <View style={styles.botao}>
+          <Button
+            title="Tarefas Concluidas"
+            onPress={() => navigation.navigate("Anotações Concluidas")}
+          />
+            </View> 
           </View> 
         </View>
     </View>

@@ -4,6 +4,7 @@ import { theme } from "../../Global/styles/theme.js";
 import database from "../../config/firebaseconfig.js";
 import styles from "./style";
 import Botao from "../Tarefa/Botao.js";
+import { ListDivider } from "../../components/ListDivider";
 
 export default function NovaEmAndamento({ navigation }, props) {
   const [descricao, setDescricao] = useState(null);
@@ -19,6 +20,8 @@ export default function NovaEmAndamento({ navigation }, props) {
   }
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Adicionar Tarefa Em Andamento</Text>
+      <ListDivider/>
       <Text style={styles.label}>Título</Text>
       <TextInput
         style={styles.input}

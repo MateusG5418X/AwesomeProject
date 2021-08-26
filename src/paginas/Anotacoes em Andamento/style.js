@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: 5,
   },
+  title:{
+    fontFamily: theme.fonts.titulo500,
+    color: theme.colors.preto,
+    fontSize: 25,
+  },
   apagarTarefa: {
     justifyContent: "center",
     paddingLeft: 15,

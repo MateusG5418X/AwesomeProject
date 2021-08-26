@@ -4,9 +4,14 @@ import { theme } from '../../Global/styles/theme';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 50,
+    paddingTop: 40,
     backgroundColor: "#fff",
   },
+  title:{
+    fontFamily: theme.fonts.titulo500,
+    color: theme.colors.preto,
+    fontSize: 25,
+},
   Tarefas: {
     width: "100%",
     flexDirection: "row-reverse",

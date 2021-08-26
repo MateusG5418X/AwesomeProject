@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import database from "../../config/firebaseconfig.js";
 import styles from "./style";
 import Botao from "../Tarefa/Botao.js";
+import { ListDivider } from "../../components/ListDivider";
 
 export default function Detalhes({ navigation, route }) {
   const [editarTitulo, seteditarTitulo] = useState(route.params.titulo);
@@ -21,6 +22,8 @@ export default function Detalhes({ navigation, route }) {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Editar Tarefa</Text>
+      <ListDivider/>
       <Text style={styles.label}>Título</Text>
       <TextInput
         style={styles.input}

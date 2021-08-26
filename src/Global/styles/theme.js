@@ -1,8 +1,9 @@
 export const theme = {
     colors: {
         principal: '#00AEEF',
-
-        branco: '#ffffff'
+        preto: '#000000',
+        branco: '#ffffff',
+        cinza: '#f5f5f5cf'
     },
 
     fonts: {

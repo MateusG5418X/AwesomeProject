@@ -7,6 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import TelaInicial from "./src/paginas/TelaInicial";
+import TelaSecundaria from "./src/paginas/Tela Secundaria";
 import Tarefa from "./src/paginas/Tarefa";
 import NovaTarefa from "./src/paginas/NovaTarefa";
 import Detalhes from "./src/paginas/Detalhes";
@@ -37,6 +38,13 @@ export default function App() {
         <Stack.Screen
           name="Tela Inicial"
           component={TelaInicial}
+          options={{
+            headerTintColor: "#00AEEF",
+          }}
+        />
+        <Stack.Screen
+          name="Tela Secundaria"
+          component={TelaSecundaria}
           options={{
             headerTintColor: "#00AEEF",
           }}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, FlatList, Alert } from "react-native";
+import { ListDivider } from "../../components/ListDivider";
 
 import database from "../../config/firebaseconfig";
 import Botao from "./Botao";
@@ -44,6 +45,8 @@ export default function Tarefa({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Tarefas a Fazer</Text>
+      <ListDivider/>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={tarefa}

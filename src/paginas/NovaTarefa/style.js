@@ -4,6 +4,7 @@ import { theme } from '../../Global/styles/theme';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 40,
     backgroundColor: "#fff",
   },
   label: {
@@ -13,6 +14,11 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     color: theme.colors.principal,
   },
+  title:{
+    fontFamily: theme.fonts.titulo500,
+    color: theme.colors.preto,
+    fontSize: 25,
+},
   input: {
     width: "90%",
     marginTop: 10,
