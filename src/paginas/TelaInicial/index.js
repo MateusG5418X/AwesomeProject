@@ -14,7 +14,7 @@ export default function TelaInicial({ navigation }) {
         <View>
           <Button
             title="Visualize Suas Anotações"
-            onPress={() => navigation.navigate("Tela Secundaria")}
+            onPress={() => navigation.navigate("Todas")}
           />
           </View>
           <View style={styles.botao}>

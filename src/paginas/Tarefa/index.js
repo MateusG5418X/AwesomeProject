@@ -45,8 +45,6 @@ export default function Tarefa({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tarefas a Fazer</Text>
-      <ListDivider/>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={tarefa}
@@ -59,7 +57,6 @@ export default function Tarefa({ navigation }) {
                 onPress={() => apagarTarefa(item.id)}
                 //onPress={displayDeleteAlert}
               />
-
               <Text
                 style={styles.DescricaoTarefa}
                 onPress={() =>

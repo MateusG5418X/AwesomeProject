@@ -45,8 +45,6 @@ export default function EmAndamento({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tarefas Em Andamento</Text>
-      <ListDivider/>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={EmAndamento}

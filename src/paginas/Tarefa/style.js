@@ -4,7 +4,7 @@ import { theme } from '../../Global/styles/theme';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 40,
+    paddingTop: 10,
     backgroundColor: "#fff",
   },
   title:{
