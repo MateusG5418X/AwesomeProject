@@ -8,7 +8,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
 import TelaInicial from "./src/paginas/TelaInicial";
-import TelaSecundaria from "./src/paginas/Tela Secundaria";
 import Tarefa from "./src/paginas/Tarefa";
 import NovaTarefa from "./src/paginas/NovaTarefa";
 import Detalhes from "./src/paginas/Detalhes";
@@ -45,7 +44,6 @@ export default function App() {
       <SafeAreaView style={{flex: 1, paddingTop: 20}}>
         <Stack.Navigator initialRouteName="Tarefa" headerMode="none">
           <Stack.Screen name="Tela Inicial" component={TelaInicial} options={{ headerTintColor: "#00AEEF" }}/>
-          <Stack.Screen name="Tela Secundaria" component={TelaSecundaria} options={{ headerTintColor: "#00AEEF"}}/>
           <Stack.Screen name="Todas" component={Tabs} options={{ headerTintColor: "#00AEEF"}}/>
           <Stack.Screen name="Nova Em Andamento" component={NovaEmAndamento} options={{ headerTintColor: "#00AEEF"}}/>
           <Stack.Screen name="Nova Anotação" component={NovaTarefa} options={{ headerTintColor: "#00AEEF"}}/>

@@ -17,7 +17,7 @@ export default function Detalhes({ navigation, route }) {
         titulo: titulo,
         descricao: descricao,
       });
-      navigation.navigate("Anotações");
+      navigation.goBack();
     }
 
   return (
